@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WirOn</string>
+
+    <string-array name="machine_array">
+        <item>Select Machine</item>
+        <item>Machine 201</item>
+        <item>Machine 202</item>
+        <item>Machine 203</item>
+        <item>Machine 204</item>
+        <item>Machine 205</item>
+        <item>Machine 206</item>
+        <item>Machine 207</item>
+        <item>Machine 208</item>
+        <item>Machine 209</item>
+        <item>Machine 210</item>
+    </string-array>
+</resources>

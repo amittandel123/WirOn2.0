@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amit.tandel.wiron">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Home"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Length"
+            android:label="Length" />
+        <activity
+            android:name=".Production"
+            android:label="Production" />
+        <activity
+            android:name=".Time"
+            android:label="Time" />
+        <activity
+            android:name=".Coil"
+            android:label="Coil" />
+        <activity
+            android:name=".Reduction"
+            android:label="Reduction" />
+        <activity android:name="com.amit.tandel.wir_on.FwdLength"></activity>
+    </application>
+
+</manifest>

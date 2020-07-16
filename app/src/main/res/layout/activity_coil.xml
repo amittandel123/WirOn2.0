@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0599fb"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.amit.tandel.wirlen.Main">
+
+    <EditText
+        android:id="@+id/ecDia"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="#b4b6b7"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal|fill_vertical"
+        android:hint="Dia in mm"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ecWeight"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ecDia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="#b4b6b7"
+        android:gravity="center_vertical|center_horizontal|fill_vertical"
+        android:hint="Weight in Kg"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ecHandleTime"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ecWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="#b4b6b7"
+        android:gravity="center_vertical|center_horizontal|fill_vertical"
+        android:hint="Handling Time in Minutes"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ecSpeed1"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ecHandleTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="#b4b6b7"
+        android:hint="Speed in m/Sec"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ecSpeed1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="OR"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/ecSpeed2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvSpace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="#b4b6b7"
+        android:hint="Speed in m/Min"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/bCalcCoil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ecSpeed2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_button"
+        android:text="Calculate"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tcCoil"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/bCalcCoil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:background="#fbfb04"
+        android:gravity="center_vertical|center_horizontal"
+        android:numeric="decimal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tcCoil"
+        android:layout_centerHorizontal="true"
+        android:text="No. of Coils per Shift"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+</RelativeLayout>
